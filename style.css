@@ -1,0 +1,313 @@
+body{
+    background: #546e7a;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+}
+
+h1{
+    color: white;
+    font-size: 42px;
+}
+
+form{
+    background: #29434e;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 350px;
+}
+
+form:hover {
+    -webkit-box-shadow: 16px -16px 2px 0px #1c313a;
+    -moz-box-shadow: 16px -16px 2px 0px #1c313a;
+    box-shadow: 16px -16px 2px 0px #1c313a;    
+    transition: 1s box-shadow;
+}
+
+form button:hover {
+    background: #34515e;
+}
+
+button {
+    background: #819ca9;
+    color: white;
+    margin-top: 10px;
+}
+
+input {
+    background: #819ca9;
+}
+p {
+    color: white;
+    font-size: 42px;
+}
+
+li {
+    color: white;
+}
+
+/* PRZEJSCIA ---------------------------------------------- */
+
+/* .przejscia:hover {
+    -webkit-box-shadow: 16px -16px 2px 0px #1c313a;
+    -moz-box-shadow: 16px -16px 2px 0px #1c313a;
+    box-shadow: 16px -16px 2px 0px #1c313a;    
+    transition: 1s box-shadow;
+} */
+
+.przejscia {
+    -webkit-animation: shadow-drop-2-center 0.4s ease-out forwards;
+    animation: shadow-drop-2-center 0.4s ease-out forwards;
+    background: #29434e;
+    padding: 20px;
+    border-radius: 5px;
+    width: 9%;
+    margin-top: 20px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+    position: fixed;
+}
+
+.przejscia a {
+    color: white;
+    padding-bottom: 5px;    
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.przejscia a:hover {
+    font-weight: bold;
+}
+/* UI --------------------------------------------------------------------- */
+
+.header {
+    -webkit-animation: shadow-drop-2-center 0.4s ease-out forwards;
+    animation: shadow-drop-2-center 0.4s ease-out forwards;
+    background: #29434e;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 60%;
+    margin-top: -10px;
+    margin-left: -5px; 
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* NOTATKI -----------------------------------------------------------------*/
+
+
+
+  
+
+
+.notatki {
+	-webkit-animation: shadow-drop-2-center 0.4s ease-out forwards;
+	        animation: shadow-drop-2-center 0.4s ease-out forwards;
+    background: #29434e;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    margin-left: 150px;
+    margin-right: 50px;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+.notatki:hover {
+    -webkit-box-shadow: 16px -16px 2px 0px #1c313a;
+    -moz-box-shadow: 16px -16px 2px 0px #1c313a;
+    box-shadow: 16px -16px 2px 0px #1c313a;    
+    transition: 1s box-shadow;
+}
+
+.notatki .content {
+    color:white;
+    font-size: 20px;
+    width: 75%;
+    line-height: 26px;
+}
+
+
+/* PLAN LEKCJI ------------------------------------------------------------*/
+
+.plan {
+    -webkit-animation: shadow-drop-2-center 0.4s ease-out forwards;
+    animation: shadow-drop-2-center 0.4s ease-out forwards;
+    color: white;
+    width: 25%;
+    background: #29434e;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.plan li {
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.dataIczas {
+	-webkit-animation: shadow-drop-2-center 0.4s ease-out forwards;
+	animation: shadow-drop-2-center 0.4s ease-out forwards;
+
+    font-size: 40px;
+    color: white;
+    width: 40%;
+    background:#29434e;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+select {
+    background: #819ca9;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Losowanie ---------------------------------------------------- */
+
+.ListaImion {
+
+	-webkit-animation: shadow-drop-2-center 0.4s ease-out forwards;
+	        animation: shadow-drop-2-center 0.4s ease-out forwards;
+            
+    background: #29434e;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    margin-left: 150px;
+    margin-right: 50px;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+
+
+
+/* turn off plan --------------------------------------------------*/
+.list-0, .list-1, .list-2,.list-3,.list-4 {
+    display: none;
+}
+
+
+
+/* XD NIE WIEM ANIMATOR BRUM BRUM */
+
+ /* ----------------------------------------
+ * animation shadow-drop-2-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+    }
+
+    /* RWD ----------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1150px) {
+    .przejscia a{
+        font-size: 12px;
+    }
+    .header h1, span{
+        font-size: 16px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .plan {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan .dataIczas {
+        margin: 10px 0;
+    }
+    .dataIczas {
+        margin-left: 150px;
+    }
+    .dataIczas p{
+        font-size: 15px;
+    }
+
+    .plan li {
+        font-size: 12px;
+    }
+    .header h1, span{
+        font-size: 12px;
+    }
+    .przejscia a{
+        font-size: 9px;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .plan {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan .dataIczas {
+        margin: 10px 0;
+    }
+    .dataIczas {
+        margin-left: 150px;
+    }
+    .dataIczas p{
+        font-size: 9px;
+    }
+
+    .plan li {
+        font-size: 7px;
+    }
+    .header h1, span{
+        font-size: 7px;
+    }
+    .przejscia a{
+        font-size: 7px;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+}
