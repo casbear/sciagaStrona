@@ -51,12 +51,10 @@ li {
 
 /* PRZEJSCIA ---------------------------------------------- */
 
-/* .przejscia:hover {
-    -webkit-box-shadow: 16px -16px 2px 0px #1c313a;
-    -moz-box-shadow: 16px -16px 2px 0px #1c313a;
-    box-shadow: 16px -16px 2px 0px #1c313a;    
+.przejscia:hover {
     transition: 1s box-shadow;
-} */
+    z-index: 1;
+}
 
 .przejscia {
     -webkit-animation: shadow-drop-2-center 0.4s ease-out forwards;
@@ -64,11 +62,13 @@ li {
     background: #29434e;
     padding: 20px;
     border-radius: 5px;
-    width: 9%;
+    width: auto;
     margin-top: 20px;
     margin-left: -10px;
     margin-bottom: 20px;
     position: fixed;
+    color: white;
+
 }
 
 .przejscia a {
@@ -115,7 +115,7 @@ li {
     padding: 20px;
     border-radius: 5px;
     color: white;
-    margin-left: 150px;
+    margin-left: 50px;
     margin-right: 50px;
     margin-top: 20px;
     line-height: 20px;
