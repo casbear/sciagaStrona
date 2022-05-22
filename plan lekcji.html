@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Plan lekci</title>
+</head>
+<body>
+    <div class="header"> 
+        <h1>TECHNISCHOOLS | <span>PLAN LEKCJI</span></h1>        
+    </div>
+
+    <div class="przejscia" id="meni" onmouseleave="menu()" onmouseenter="menu()"> MENU </div>
+     
+    <div class="container">
+        <div class="plan">
+
+            <select id="selectedDay" onchange="changePlan()" > 
+                <option value="1">Poniedziałek</option>
+                <option value="2">Wtorek</option>
+                <option value="3">Środa</option>
+                <option value="4">Czwartek</option>
+                <option value="5">Piątek</option>
+                <option value="6">Sobotka</option>
+                <option value="0">Niedziela</option>
+            </select>
+
+            <ul class="list-0">
+                <li>[]</li>
+                <li>Chinski</li>
+                <li>Polski</li>
+                <li>Polski</li>
+                <li>Matematyka</li>
+                <li>Historia</li>
+                <li>Historia</li>
+                <li>WF</li>
+            </ul>
+            <ul class="list-1">
+                <li>Bazy Danych</li>
+                <li>Bazy Danych</li>
+                <li>Programowanie</li>
+                <li>Programowanie</li>
+                <li>Matematyka</li>
+                <li>Matematyka</li>
+                <li>WF</li>
+                <li>WF</li>
+            </ul>
+            <ul class="list-2">
+                <li>Chemia</li>
+                <li>Filozofia</li>
+                <li>[]</li>
+                <li>Informatyka</li>
+                <li>Informatyka</li>
+                <li>Informatyka</li>
+                <li>Strony Internetowe</li>
+                <li>Strony Internetowe</li>
+            </ul>
+            <ul class="list-3">
+                <li>Bazy Danych</li>
+                <li>Bazy Danych</li>
+                <li>Hiszpanski</li>
+                <li>Hiszpanski</li>
+                <li>Fizyka</li>
+                <li>Fizyka</li>
+                <li>Grafika</li>
+                <li>Biologia</li>
+            </ul>
+            <ul class="list-4">
+                <li>Geografia</li>
+                <li>EDB</li>
+                <li>GW</li>
+                <li>[]</li>
+                <li>Polski</li>
+                <li>Angielski</li>
+                <li>Angielski</li>
+
+            </ul>
+        </div>
+
+        <div class="dataIczas">
+            <p id="date"></p>
+            <p id="clock"></p>
+        </div>
+    </div>
+
+    <script src="notatki.js"></script>
+    <script src="planLekcji.js"></script>
+</body>
+</html>
